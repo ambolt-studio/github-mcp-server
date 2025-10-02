@@ -23,4 +23,5 @@ WORKDIR /server
 COPY --from=build /bin/github-mcp-server .
 
 ENTRYPOINT ["/server/github-mcp-server"]
-CMD ["stdio"]
+CMD ["--help"]
+
